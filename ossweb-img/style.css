@@ -1,0 +1,1139 @@
+body,dl,dd,ul,ol,h1,h2,h3,h4,h5,h6,p,form{margin:0}
+body,button,input,select,textarea{font:12px/1.5 Tahoma,Helvetica,simsun,sans-serif;color:#666;word-wrap:break-word;word-break:break-all}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+em,b,i{font-style:normal}
+a{text-decoration:none}
+a:hover{text-decoration:none;}
+img{border:0}
+button,input,select,textarea{font-size:100%;outline:none}
+table{border-collapse:collapse;border-spacing:0}
+td,th,ul,ol,li{padding:0;list-style:none;}
+body{background-color:#0a1e21;z-index:999; font-family:"microsoft yahei";overflow-x: hidden;}
+.fl{float: left;}
+.fr{float: right;}
+.clearfix:after{content:" ";clear:both;height:0;visibility:hidden;display:block;}
+.clearfix{*zoom:1;}
+.hide{display:none;}
+/*头部样式*/
+.topbar{height:1.2rem; background:rgba(0,0,0,0.9); position: fixed; top:0; left:0; width: 100%; z-index: 9997;}
+.topbar .avatar{width: 1rem; height:1rem; position: absolute; left:0.2rem; top:0.1rem;}
+.topbar .avatar a{display: block; background:url(//game.gtimg.cn/images/ffm/m/m201712/avatar.png) no-repeat;
+    background-size: 1rem 1rem; height:100%;}
+.topbar .avatar span{display: none;}
+.topbar .intro{position: absolute; left:1.4rem; top:0.18rem; color:#fff; line-height: 1.5;}
+.topbar .intro h2{font-size:0.34rem;text-align: left;}
+.topbar .intro p{font-size:0.22rem;}
+.topbar .btn-book{width: 1.8rem; height:0.57rem; background:url("//game.gtimg.cn/images/ffm/m/m201712/btn-book.jpg") no-repeat;
+    background-size: 1.8rem 0.57rem; background-size: 1.8rem 0.57rem; position: absolute; right:0.2rem; top:0.3rem; text-indent: -200%; overflow: hidden;}
+/*content*/
+.wrapper{
+    width: 7.5rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family:"microsoft yahei";
+}
+#mask{
+    background-color: #000;
+    opacity: .5;
+    width: 100%;
+    height: 20rem;
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 9998;
+}
+.main_content{
+    width: 100%;
+    margin-top: 1.2rem;
+}
+.module_1{
+    width: 7.5rem;
+    background:url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/backgroud1.jpg") no-repeat center top;
+    background-size: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-top: -1.2rem;
+}
+.module_2{
+    width: 7.5rem;
+    height: 10.46rem;
+    background:url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/background2.jpg") no-repeat center top;
+    background-size: 100%;
+    overflow: hidden;
+}
+ .module_3{
+    width: 7.5rem;
+    height: 22.4rem;
+    background:url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/background3.jpg") no-repeat center top;
+    background-size: 100%;
+    overflow: hidden;
+}
+.module_1 .kv{
+    width: 7.5rem;
+}
+.module_1 .kv  img{
+    display: block;
+    margin: 1.8rem auto 0rem;
+    width: 6.48rem;
+}
+.module_1 .kv .index{
+    width: 6.53rem;
+    height:0.99rem;
+    position: relative;
+    margin: 0.72rem auto 0rem;
+    background:url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/LCD.png") no-repeat center top;
+    background-size: 100%;
+}
+.module_1 .kv .index ul{
+    position: relative!important;
+    top: 0px!important;
+    right: 0px;
+    width: 6.53rem;
+    height:0.99rem;
+}
+.module_1 .kv .index ul li{
+    width: 2.16rem;
+    height:0.99rem;
+    float: left;
+}
+.module_1 .side-info{
+    position: fixed;
+    right:0;
+    top:3rem;
+    z-index:999;
+}
+.module_1 .side-info a:nth-of-type(1){
+    display: block;
+    width:0.47rem;
+    height:1.9rem;
+    background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/activityrules.png") no-repeat center top;
+    background-size: 100%;
+}
+.module_1 .side-info a:nth-of-type(2){
+    display: block;
+    width:0.47rem;
+    height:1.9rem;
+    background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/award-code.png") no-repeat center top;
+    background-size: 100%;
+}
+.module_1 .playground{
+    width: 6.53rem;
+    height: 9.69rem;
+    background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/playground.png") no-repeat center top;
+    background-size:100%;
+    margin: 0.7rem auto 0;
+    position: relative;
+}
+.module_1 .playground img{
+    width: 1.08rem;
+    height: 1.44rem;
+}
+.module_1 .playground  img:nth-of-type(1){
+    position: absolute;
+    top: 1.5rem;
+    left: 0.7rem;
+}
+.module_1 .playground img:nth-of-type(2){
+    position: absolute;
+    top: 0.5rem;
+    left: 2.73rem;
+}
+.module_1 .playground img:nth-of-type(3){
+
+    position: absolute;
+    top: 1.5rem;
+    left: 4.8rem;
+}
+.module_1 .playground img:nth-of-type(4){
+    position: absolute;
+    top: 3.6rem;
+    left: 1rem;
+}
+.module_1 .playground img:nth-of-type(5){
+    position: absolute;
+    top:4.16rem;
+    left:2.71rem;
+}
+.module_1 .playground img:nth-of-type(6){
+    position: absolute;
+    top: 3.6rem;
+    left: 4.44rem;
+}
+.module_1 .playground img:nth-of-type(7){
+    position: absolute;
+    top:6rem;
+    left:0.5rem;
+}
+.module_1 .playground img:nth-of-type(8){
+    position: absolute;
+    top:6rem;
+    left:2rem;
+}
+.module_1 .playground img:nth-of-type(9){
+    position: absolute;
+    top:6rem;
+    left:3.5rem;
+}
+.module_1 .playground img:nth-of-type(10){
+    position: absolute;
+    top:6rem;
+    left:5rem;
+}
+.module_1 .playground img:nth-of-type(11){
+    position: absolute;
+    top:7.5rem;
+    left:2.71rem;
+}
+.module_1 .btn-group{
+    width: 7.5rem;
+    height: 1.8rem;
+    text-align: center;
+}
+.module_1 .btn-group a{
+    display: inline-block;
+    width: 2.99rem;
+    height: 0.77rem;
+    background:url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/guess-zr.png") no-repeat center top;
+    background-size:100%;
+    margin-top: 0.7rem;
+}
+.module_1 .btn-group a.a1{
+    background:url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/jjqd.png") no-repeat center top;
+    background-size:100%;
+}
+.module_1 .btn-group a.a2{
+    background:url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/ckzqzr.png") no-repeat center top;
+    background-size:100%;
+}
+.module_1 .btn-group a.a3{
+    background:url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/change-zr.png") no-repeat center top;
+    background-size:100%;
+}
+.module_1 .btn-group a.a4{
+    background:url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/submit-zr.png") no-repeat center top;
+    background-size:100%;
+}
+.module_1 .info{
+    color: #E1E7E8;
+}
+.module_1 .info p{
+    font-size:0.2rem;
+    color: #fff;
+    margin-left: 0.58rem;
+}
+.module_1 .info p:nth-of-type(3){
+    margin-left: 1rem;
+}
+.module_1 .info p:nth-of-type(1){
+    color: #B6CDED;
+    text-decoration:underline;
+}
+.module_1 .info i{
+    display: inline-block;
+    width: 0.2rem;
+    height: 0.2rem;
+    background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/squre.png") center top;
+    background-size: 100%;
+    margin: 0 0.1rem;
+}
+.module_2 h2{
+    width:7.5rem;
+    height: 1.28rem;
+    background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/title1.png") no-repeat center top;
+    background-size:100%;
+    margin-top: 0.34rem;
+}
+.module_2 .cheer_content{
+    width: 100%;
+    height: auto;
+    margin-top: 1.3rem;
+}
+.module_2 .cheerBar_box{
+    width: 100%;
+    height: 2.6rem;
+    text-align: center;
+}
+.module_2 .cheerBar_box .cheer_bar{
+    width: 6.76rem;
+    height:  0.64rem;
+    margin: 0 auto;
+    background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/progress.png") no-repeat center top;
+    background-size:100%;
+    position: relative;
+}
+.module_2  .cheer_bar .press_bar{
+    width: 0rem;
+    height: 0.49rem;
+    background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/progress-bar.png")repeat-x;
+    position: absolute;
+    left: 0.06rem;
+    top: 0.07rem;
+    border-radius: 23px;
+    z-index: 99;
+}
+.module_2  .cheer_bar  .press_pic_01{
+    width: 3.26rem;
+    height: 1.91rem;
+    background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/fireworks.png") no-repeat center top;
+    background-size: 100%;
+    position: absolute;
+    right: 5.05rem;
+    top: -1.6rem;
+    z-index: 98;
+}
+.module_2 .cheerBar_box p{
+    font-size: 0.2rem;
+    color: #d0d2d1;
+    text-align: center;
+    margin: 0.2rem;
+    text-indent: 0.5em;
+}
+.module_2 .cheerBar_box p span{
+    color: #fec303;
+}
+.module_2 .cheerBar_box .cheer_btn{
+    display: inline-block;
+    width: 2.6rem;
+    height: 0.81rem;
+    background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/invite.png") no-repeat center top;
+    background-size:100%;
+    text-indent: -9999px;
+}
+.module_2 .cheer_list{
+    width: 100%;
+    height: 3.7rem;
+    font-size: 0;
+    text-align: center;
+    position: relative;
+    top: 0.2rem;
+}
+.module_2  .cheer_list_icon{
+    text-align: center;
+}
+
+.module_2  .cheer_list_icon img{
+    width: 4.06rem;
+    height: 0.68rem;
+}
+.module_2 .cheer_list .cheer_item{
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+}
+.module_2 .cheer_list .cheer_item img{
+    margin-bottom: 0.05rem;
+}
+.module_2 .cheer_list .cheer_item:nth-of-type(1){
+      left: 0.3rem;
+      top: 0;
+  }
+.module_2 .cheer_list .cheer_item:nth-of-type(1) img{
+    width:1.01rem;
+    height: 1.44rem;
+}
+.module_2 .cheer_list .cheer_item:nth-of-type(2){
+    left: 1.6rem;
+    top: 0.34rem;
+}
+.module_2 .cheer_list .cheer_item:nth-of-type(2) img{
+    width:1.2rem;
+    height: 1.54rem;
+}
+
+.module_2 .cheer_list .cheer_item:nth-of-type(3){
+    left: 3.1rem;
+    top: 0.4rem;
+}
+.module_2 .cheer_list .cheer_item:nth-of-type(3) img{
+    width:1.3rem;
+}
+.module_2 .cheer_list .cheer_item:nth-of-type(3) p{
+    color: #f5ca0a;
+    font-weight: bold;
+}
+.module_2 .cheer_list .cheer_item:nth-of-type(3) p span{
+    color: #f5ca0a;
+    font-weight:normal;
+}
+.module_2 .cheer_list .cheer_item:nth-of-type(4){
+    left: 4.6rem;
+    top: 0.34rem;
+}
+.module_2 .cheer_list .cheer_item:nth-of-type(4) img{
+    width:1.09rem;
+    height: 1.57rem;
+}
+.module_2 .cheer_list .cheer_item:nth-of-type(5){
+    right: 0.2rem;
+    top: 0;
+}
+.module_2 .cheer_list .cheer_item:nth-of-type(5) img{
+    width:1rem;
+    height: 1.46rem;
+}
+.module_2 .cheer_list .cheer_item p{
+    color: #fff;
+    font-size: 0.2rem;
+}
+.module_3 h2{
+    width: 100%;
+    height: 1.28rem;
+    background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/title2.png") no-repeat center top;
+    background-size: 100%;
+    margin-top: 0.9rem;
+}
+.module_3 .legend_contain{
+    width:7.5rem;
+    height: auto;
+    margin-top:0.34rem;
+}
+.module_3  .legend_box{
+    width:7.18rem;
+    height: 3.63rem;
+    background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/frame1.png") no-repeat center;
+    background-size:100%;
+    position: relative;
+    margin:0 auto;
+    margin-bottom:1rem;
+}
+.module_3  .legend_box .not-reach{
+    width: 1.05rem;
+    height: 0.82rem;
+    background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/not-reach.png") no-repeat center top;
+    background-size: 100%;
+    position: absolute;
+    right: 0.4rem;
+    top:0;
+}
+.legend_contain .address{
+    text-decoration: underline;
+    color: #fff;
+    text-align: center;
+    font-size: .25rem;
+    margin-bottom: 0.5rem;
+}
+.module_3  .legend_list{
+    text-align: center;
+    font-size: 0;
+    position: relative;
+    top: 1.32rem;
+}
+.module_3  .legend_list .legend_item:nth-of-type(1) img{
+    width: 0.95rem;
+    height: 0.98rem;
+}
+.module_3  .legend_list .legend_item:nth-of-type(2) img{
+    width: 0.97rem;
+    height: 1.25rem
+}
+.module_3  .legend_list .legend_item:nth-of-type(3) img{
+    width: 1.69rem;
+    height: 2.27rem
+}
+.module_3  .legend_list .legend_item:nth-of-type(4) img{
+     width: 0.89rem;
+     height: 1.2rem
+ }
+.module_3  .legend_list .legend_item:nth-of-type(5) img{
+    width: 1.03rem;
+    height: 0.95rem
+}
+.module_3  .legend_list .legend_item{
+    display: inline-block;
+    margin:0 0.03rem;
+}
+.module_3  .legend_list .legend_item .row{
+    visibility: hidden;
+}
+.module_3  .legend_list .legend_item p{
+    font-size: 0.10rem;
+    color: #fff;
+}
+.module_3  .legend_list .legend_item:nth-of-type(3) img p:nth-of-type(1){
+    font-size: 0.28rem;
+}
+.module_3  .legend_list .legend_item:nth-of-type(3) img p:nth-of-type(2){
+    font-size: 0.14rem;
+}
+.module_3  .legend_list .legend_item .tel-img{
+    color: #f5ca0a;
+    font-weight: bold;
+    font-size:0.20rem;
+}
+.module_3  .legend_list .legend_item .tel-add{
+    color: #f5ca0a;
+    font-weight:normal;
+    font-size:0.14rem;
+}
+.module_3 .legend_items{
+    height: 14.78rem;
+    width: 100%;
+}
+.module_3 .legend_items .legend_item_king{
+    width: 6.7rem;
+    height: 3rem;
+    background:url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/frame2.png") no-repeat center top;
+    background-size: 100%;
+    margin: 0 auto;
+    margin-bottom: 0.66rem;
+    position: relative;
+}
+.module_3 .legend_items  .price_group{
+    position: relative;
+    top: 1rem;
+    text-align: center;
+}
+.module_3 .legend_items  .price1 img{
+    width: 0.95rem;
+    height: 0.98rem;
+}
+.module_3 .legend_items  .price2 img{
+    width: 0.88rem;
+    height: 1.25rem;
+}
+.module_3 .legend_items  .price3 img{
+    width: 0.89rem;
+    height: 1.29rem;
+}
+.module_3 .legend_items  .price4 img{
+    width: 1.03rem;
+    height: 0.95rem;
+}
+.module_3 .legend_items .price{
+    display: inline-block;
+    margin:0  0.02rem;
+}
+.module_3 .legend_items  p{
+    font-size: 0.10rem;
+    color: #fff;
+}
+.module_3 .legend_items  .reached{
+    width: 1.05rem;
+    height: 0.82rem;
+    background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm//not-reach.png") no-repeat center top;
+    background-size: 100%;
+    position: absolute;
+    right: 0.2rem;
+    top:-0.4rem;
+}
+.module_3 .legend_items .legend_item_superstar{
+    width: 6.7rem;
+    height: 3rem;
+    background:url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/frame3.png") no-repeat center top;
+    background-size: 100%;
+    margin: 0 auto;
+    margin-bottom: 0.66rem;
+    position: relative;
+}
+.module_3 .legend_items .legend_item_intelligent{
+    width: 6.7rem;
+    height: 3rem;
+    background:url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/frame4.png") no-repeat center top;
+    background-size: 100%;
+    margin: 0 auto;
+    margin-bottom: 0.66rem;
+    position: relative;
+}
+.module_3 .legend_items .legend_item_new{
+    width: 6.7rem;
+    height: 3rem;
+    background:url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/frame5.png") no-repeat center top;
+    background-size: 100%;
+    margin: 0 auto;
+    margin-bottom: 0.66rem;
+    position: relative;
+}
+.module_4 {
+    height: 2.5rem;
+    overflow: hidden;
+    position: relative;
+}
+.module_4 .list{
+    width: 6.87rem;
+    height: 1.9rem;
+    position: absolute;
+    bottom: .2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0;
+}
+.module_4 .list li{
+    display: inline-block;
+    width: 1.64rem;
+    height: 1.89rem;
+    margin-right: .1rem;
+}
+.module_4 .list li img{
+    width: 100%;
+    height: 100%;
+}
+.module_4 .list li:last-child{
+    margin-right: 0;
+}
+/*弹框样式*/
+
+#playerChoosen{
+    width:6.72rem;
+    height: 10rem;
+    background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/backgrounding.png") no-repeat center top;
+    background-size:100%;
+    position: relative;
+}
+#playerChoosen ul{
+    overflow: hidden;
+    position: absolute;
+    top:0.6rem;
+    left:0rem;
+}
+#playerChoosen ul li {
+    float: left;
+    font-size: 0.3rem;
+    color:#fff;
+    width:1.68rem;
+    height: 0.7rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+.active{
+    color:#FED750!important;
+    background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/selected-bg.png") center top;
+    background-size: 100%;
+}
+#playerChoosen .players{
+    position: absolute;
+    top: 1.26rem;
+    left: 0rem;
+    overflow-y: auto;
+    height: 7rem;
+}
+#playerChoosen .player{
+    width: 2.24rem;
+    height: 3rem;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: center;
+    float: left;
+    position: relative;
+}
+#playerChoosen .player img:nth-of-type(1){
+    width: 1.65rem;
+    height: 2.11rem;
+    margin-top: 0.3rem;
+}
+#playerChoosen .player img:nth-of-type(2){
+    width: 1.38rem;
+    height: 0.44rem;
+}
+#playerChoosen  .forward .player i{
+    position: absolute;
+    width: 1.38rem;
+    height: 0.44rem;
+    opacity: 0;
+    left:0.6rem;
+    right:0rem
+}
+#playerChoosen  .midfield .player i{
+    position: absolute;
+    width: 1.38rem;
+    height: 0.44rem;
+    opacity: 0;
+    left:0.6rem;
+    right:0rem
+}
+#playerChoosen  .guard .player i{
+    position: absolute;
+    width: 1.38rem;
+    height: 0.44rem;
+    opacity: 0;
+    left:0.6rem;
+    right:0rem
+}
+#playerChoosen  .goalkeeper .player i{
+    position: absolute;
+    width: 1.38rem;
+    height: 0.44rem;
+    opacity: 0;
+    left:0.6rem;
+    right:0rem
+}
+#playerChoosen .btn-group{
+    width: 100%;
+    height: 1.46rem;
+    position: absolute;
+    top:8.5rem;
+    left:0;
+    text-align: center;
+    line-height: 1.8rem;
+}
+#playerChoosen .btn-group p{
+    font-size: 0.3rem;
+    line-height: 0.3rem;
+    color: #fff;
+    padding-bottom: 0.2rem;
+}
+#playerChoosen .btn-group .order{
+    display: inline-block;
+    width: 2.69rem;
+    height: 0.7rem;
+    background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/clear.png") no-repeat center top;
+    background-size:100%;
+}
+#playerChoosen .btn-group .participate{
+    display: inline-block;
+    width: 2.69rem;
+    height: 0.7rem;
+    background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/confirm.png") no-repeat center top;
+    background-size:100%;
+}
+#playerChoosen>a{
+    position: absolute;
+    width: 0.96rem;
+    height:0.58rem;
+    top:0rem;   
+	 right:0rem;
+    background:url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/pop_close.png") no-repeat center top;
+    background-size: 100%;
+}
+
+#active-border{
+    width:6.72rem;
+    height:10rem;
+    margin: 0 auto;
+    background:url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/active-rule-background.png") center top;
+    background-size: 100%;
+    color:#EBEDEB;
+    box-sizing: border-box;
+    padding:1.2rem 0.3rem 0.5rem;
+    /*overflow-y: auto;*/
+    position: relative;
+}
+#active-border>div{
+    width:6.72rem;
+    height:8.6rem;
+    margin: 0 auto;
+    /*padding: 0 0.2rem;*/
+    overflow-y: auto;
+    position: absolute;
+    left:0.07rem;
+    top:0.9rem;
+}
+#active-border>div div{
+    padding: 0 0.3rem;
+}
+#active-border>div p{
+    font-size: 0.28rem;
+    line-height: 0.5rem;
+}
+#active-border>div i{
+    font-size: 0.36rem;
+    font-weight: 600;
+}
+#active-border>div div:nth-of-type(2){
+    margin-top: 0.4rem;
+}
+#active-border> a{
+    position: absolute;
+    width: 0.96rem;
+    height:0.58rem;
+    top: 0rem;
+    right: 0rem;
+    background:url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/pop_close.png") no-repeat center top;
+    background-size: 100%;
+}
+#mycode{
+    width:5.72rem;
+    height:2.8rem;
+    margin: 0 auto;
+    background:url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/award-codebg.png") center top;
+    background-size: 100%;
+    color:#EBEDEB;
+    box-sizing: border-box;
+    padding-top:0.8rem;
+}
+#mycode input{
+    display: block;
+    width: 4.6rem;
+    height: 0.6rem;
+    color: #EBEDEB;
+    background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/input-bg.png") no-repeat center;
+    background-size: 100%;
+    border: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#mycode>p{
+    width: 80%;
+   margin: 0.13rem auto;
+}
+#mycode a{
+    position: absolute;
+    width: 0.96rem;
+    height:0.58rem;
+    top:0rem;
+    right:0rem;
+    background:url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/pop_close.png") no-repeat center top;
+    background-size: 100%;
+}
+#play-info{
+    width: 6.72rem;
+    height: 6rem;
+    background:url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/play-info.png") no-repeat center top;
+    background-size: 100%;
+    margin: 0 auto;
+    padding:0.8rem 0.1rem 0rem;
+    position: relative;
+}
+#play-info p{
+   color: #EBEDEB;
+}
+#play-info>p{
+    padding-top: 1rem;
+    padding-bottom: 0.1rem;
+    text-align: center;
+    font-size:0.28rem;
+}
+#play-info div p:nth-of-type(1){
+    font-size:0.36rem;
+    font-weight: 600;
+}
+#play-info div p {
+	font-size: 0.24rem;
+    line-height: 0.5rem;
+
+}
+#play-info a{
+    position: absolute;
+    width: 0.96rem;
+    height:0.58rem;
+    top:0rem;    right:0rem;
+    background:url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/pop_close.png") no-repeat center top;
+    background-size: 100%;
+}
+#address{
+    width: 5.72rem;
+    height: 5.80rem;
+    background:url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/address.png") no-repeat center top;
+    background-size: 100%;
+    margin: 0 auto;
+    padding: 1rem 0.1rem 0rem;
+    position: relative;
+    color:#EBEDEB;
+}
+
+#address div span{
+    display: inline-block;
+    width: 1.2rem;
+    text-align: right;
+}
+#address div p{
+    line-height: 0.42rem;
+    text-align: center;
+}
+#address .name{
+    margin-top: 0.5rem;
+    width: 100%;
+}
+#address input{
+    display: inline-block;
+    width: 3.78rem;
+    height: 0.36rem;
+    color: #EBEDEB;
+    background: url(//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/input-bg.png) no-repeat center;
+    background-size: 100%;
+    border: none;
+    margin: 0 auto;
+}
+#address .phone{
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    width: 100%;
+}
+#address button{
+    display: block;
+    margin: 0.3rem auto;
+    color: #000;
+}
+#address a{
+    position: absolute;
+    width: 0.96rem;
+    height:0.58rem;
+    top:0rem;    right:0rem;
+    background:url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/pop_close.png") no-repeat center top;
+    background-size: 100%;
+}
+#address i{
+    display: block;
+    width: 2.88rem;
+    height: 0.67rem;
+    background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/confirm-tj.png") no-repeat center top;
+    background-size: 100%;
+    position: absolute;
+    left: 1.55rem;
+    bottom:1.6rem;
+}
+#address em{
+    color: #fff;
+    padding:0;
+}
+#addressone{
+    width: 5.72rem;
+    height: 5.80rem;
+    background:url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/address.png") no-repeat center top;
+    background-size: 100%;
+    margin: 0 auto;
+    padding: 1rem 0.1rem 0rem;
+    position: relative;
+    color:#EBEDEB;
+}
+
+#addressone div span{
+    display: inline-block;
+    width: 1.2rem;
+    text-align: right;
+}
+#addressone div p{
+    line-height: 0.42rem;
+    text-align: center;
+}
+#addressone .name{
+    margin-top: 0.5rem;
+    width: 100%;
+}
+#addressone input{
+    display: inline-block;
+    width: 3.78rem;
+    height: 0.36rem;
+    color: #EBEDEB;
+    background: url(//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/input-bg.png) no-repeat center;
+    background-size: 100%;
+    border: none;
+    margin: 0 auto;
+    text-align: center;
+}
+#addressone .phone{
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    width: 100%;
+}
+#addressone button{
+    display: block;
+    margin: 0.3rem auto;
+    color: #000;
+}
+#addressone a{
+    position: absolute;
+    width: 0.96rem;
+    height:0.58rem;
+    top:0rem;    right:0rem;
+    background:url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/pop_close.png") no-repeat center top;
+    background-size: 100%;
+}
+#addressone i{
+    display: block;
+    width: 2.88rem;
+    height: 0.67rem;
+    background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/confirm-tj.png") no-repeat center top;
+    background-size: 100%;
+    position: absolute;
+    left: 1.55rem;
+    bottom:1.6rem;
+}
+#addressone em{
+    color: #fff;
+    padding:0;
+}
+#share{
+    width: 7.5rem;
+    background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/share.png") no-repeat center top;
+    background-size: 100%;
+    margin: 0 auto;
+}
+#system{
+    width: 6.9rem;
+    background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/system.png") no-repeat center top;
+    background-size: 100%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
+	padding-top: 0.3rem;
+    padding-bottom: 0.6rem;
+}
+#system .qqlogindr{
+    padding: .68rem .1rem .4rem .2rem;
+}
+
+#system .area_li{
+    font-size: .35rem;
+    color: #fff;
+    padding-top: 0.3rem;
+	text-align: center;
+}
+#system .area_yqm,#system .area_sj,#system .area_szm{
+    margin: .2rem 0;
+    text-align: center;
+}
+#system .area_yqm input,#system .area_sj input,#system .area_szm input{
+    display: inline-block;
+    width: 3.78rem;
+    height: 0.36rem;
+    color: #EBEDEB;
+    background: url(//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/input-bg.png) no-repeat center;
+    background-size: 100%;
+    border: none;
+    margin: 0 auto;
+    text-align: left;
+}
+#system input::-webkit-input-placeholder {
+    color:#EBEDEB;
+}
+#system input:-moz-placeholder {
+    color:#EBEDEB;
+}
+#system input::-moz-placeholder {
+    color:#EBEDEB;
+}
+#system input:-ms-input-placeholder {
+    color:#EBEDEB !important;
+}
+#system .area_szm{
+    position: relative;
+}
+#system .area_szm .fs{
+    width: 1.2rem;
+    height: .46rem;
+    line-height: .46rem;
+    position: absolute;
+    right: .84rem;
+    top: .055rem;
+    border-left: 1px solid #0c2f31;
+    display: block;
+    background: #e6ac00;
+    text-align: center;
+    font-size: .19rem;
+    color: #000;
+}
+#system .close_btn{
+    position: absolute;
+    width: 1.17rem;
+    height: 1rem;
+    background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/pop_close.png") no-repeat center top;
+    background-size: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-indent: -9999px;
+}
+#system .ljyy{
+    display: block;
+    width: 3.2rem;
+    height: .9rem;
+    background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/data-now.png") no-repeat center top;
+    background-size: 100%;
+    margin: .5rem auto 0;
+    text-indent: -9999px;
+}
+#yycg{
+    width: 6.5rem;
+    height: 3.11rem;
+    background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/yy-success.png") no-repeat center top;
+    background-size: 100%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    z-index: 9999;
+}
+#yycg .close_btn{
+    position: absolute;
+    width: 1.1rem;
+    height: 1rem;
+    background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/pop_close.png") no-repeat center top;
+    background-size: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-indent: -9999px;
+}
+#login{
+    width: 6.49rem;
+    height: 4.65rem;
+    background: url("//game.gtimg.cn/images/ffm/cp/a20180324ordm/login_bg.png") no-repeat center top;
+    background-size: 100%;
+    position: fixed;
+    overflow: hidden;
+    left: 0.57rem;
+    top: 38%;
+}
+#login .close_btn{
+    position: absolute;
+    width: 1.1rem;
+    height: 1rem;
+    background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/pop_close.png") no-repeat center top;
+    background-size: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.login_btn{
+    width: 4.8rem;
+    margin:1.8rem auto 0;
+    text-align: center;
+    font-size: 0;
+}
+.login_btn a{
+    display:inline-block;
+    width: 1.8rem;
+    height: 1.8rem;
+}
+.login_btn .wx{
+    background: url("//game.gtimg.cn/images/ffm/cp/a20180324ordm/wx.png") no-repeat center top;
+    background-size: 100%;
+
+}
+.login_btn .qq{
+    background: url("//game.gtimg.cn/images/ffm/cp/a20180324ordm/qq.png") no-repeat center top;
+    background-size: 100%;
+    margin-right: .35rem;
+}
+.module_1 .login{
+    position: absolute;
+    top: 1.35rem;
+    right:0.3rem;
+    color:#f5c417;
+    font-size: 0.3rem;
+    font-weight:600;
+}
+.module_1 .login a{
+    color:#f5c417;
+}
+#confirm{
+    width: 5.72rem;
+    height:2.8rem ;
+    background:url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/confirm-info.png") no-repeat center top;
+    background-size: 100%;
+    padding-top: 1rem;
+    text-align: center;
+    margin: 0 auto;
+}
+#confirm p{
+    color: #EBEDEB;
+    padding-bottom: 0.3rem;
+}
+#confirm a:nth-of-type(1){
+    display: inline-block;
+    width: 2.11rem;
+    height: 0.52rem;
+    background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/yes.png") no-repeat center top;
+    background-size: 100%;
+}
+#confirm a:nth-of-type(2){
+    display: inline-block;
+    width: 2.11rem;
+    height: 0.52rem;
+    background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/cancel.png") no-repeat center top;
+    background-size: 100%;
+}

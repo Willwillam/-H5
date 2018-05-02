@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="gbk">
+    <meta name="applicable-device" content="mobile">
+    <meta name="robots" content="all" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="keywords" content="FIFA足球世界,首款实时PVP足球竞技手游。" />
+    <meta name="description" content="来自FIFA足球世界好友邀请为TA助威，竞猜阵容，赢取海量大奖。" />
+    <meta name="viewport" content="width=375,minimum-scale=0,maximum-scale=5,user-scalable=no">
+    <script>
+        if (navigator.appVersion.indexOf('Android') != -1) {
+            document.addEventListener("DOMContentLoaded", function (e) {
+                document.querySelector('.wrapper').style.zoom = e.target.activeElement.clientWidth / 375;
+            });
+        }
+//      if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+//                  window.location ="//ffm.qq.com/cp/a20180412zqzrpc/index.htm";
+//              }
+    </script>
+    <title>FIFA足球世界好友分享</title>
+    <!-- 设计：cp | 重构：cp | 创建：2018/4/17 -->
+    <style>
+        /*reset*/::-webkit-input-placeholder{color:#999;}
+        input[type="text"], input[type="password"], select{-webkit-appearance: none;appearance: none;outline: none;-webkit-tap-highlight-color: rgba(0,0,0,0);border-radius:0;font-family: '\5FAE\8F6F\96C5\9ED1';box-sizing: border-box;}
+        body, ul, ol, p, h1, h2, h3, h4, form, table, td{margin: 0;padding: 0;}
+        img{border: none;display: block;margin: 0;padding: 0;vertical-align: bottom;}
+        a, button, input{-webkit-tap-highlight-color: rgba(255,0,0,0);}
+        ol, ul, li, td, th{list-style: none;}
+        html{-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;}
+        body, html{-webkit-tap-highlight-color: transparent;-webkit-user-select: none;}
+        .c:after{content: '\20';display: block;height: 0;line-height: 0;visibility: hidden;clear: both;}
+        .hide{display: none;height: 0;font-size: 0;line-height: 0;visibility: hidden;overflow: hidden;}
+        a{text-decoration: none;}
+        a:focus{outline: none}
+        i{font-style:normal}
+        table{border-collapse: collapse;border-spacing: 0}
+        .clearfix:after{visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+        /*public*/body{font: normal 12px/1.5 sans-serif;color:#964507;background:#000;}
+        .topbar{height:60px;background: rgba(0,0,0,0.9);position: fixed;top: 0;left: 0;width: 100%;z-index: 9997;}
+        .topbar .avatar{width: 50px;height: 50px;position: absolute;left: 10px;top:4px;}
+        .topbar .avatar a{display: block;background: url(//game.gtimg.cn/images/ffm/m/m201712/avatar.png) no-repeat;background-size: 100%;height: 100%;}
+        .topbar .avatar span{display: none;}
+        .topbar .intro{position: absolute;left: 66px;top: 10px;color: #fff;line-height: 1.5;}
+        .topbar .intro h2{font-size: 14px;text-align: left;}
+        .topbar .intro p{font-size: 12px;}
+        .topbar .btn-book{width: 100px;height: 32px;background: url(//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/btn-book.png) no-repeat;background-size:100%;position: absolute;right: 10px;top: 14px;text-indent: -200%;overflow: hidden;}
+        .wrapper{font-family: '\5FAE\8F6F\96C5\9ED1';font-size:14px;background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/bg.jpg") no-repeat;background-size: 100%;}
+        .slog{width: 320px;margin: 0 auto;padding: 15px 0 32px 0;}
+		.mod1{margin-top: 60px;}
+        #logined{    position: absolute;
+        right: 10px;    color: #f5c417;}
+        .laiz{background:url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/yy.png") no-repeat;width: 300px;background-size: 100%;height: 49px;line-height: 49px;font-size: 20px;color: #fff;font-weight: bold;margin: 0 auto 0;text-align: center}
+        .laiz span {
+            display: inline-block;
+            color: #ffff00;
+            overflow: hidden;
+            max-width: 150px;
+            height: 50px;
+            line-height: 50px;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+        }
+        .laiz i{font-style:normal; display: inline-block; vertical-align: top;    height: 50px;
+            line-height: 50px;}
+        .n_bg{background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/bskdeb.png") no-repeat;background-size: 100%;width: 320px;margin: 20px auto 0;}
+        .n_bg img{width: 50px;position: absolute}
+        .img_top,.img_cen,.img_bot{position: relative;height: 158px}
+        .img_bot img{top:-10px}
+        .img1{left: 30px;top: 70px;}
+        .img2{left: 135px;top: 24px;}
+        .img3{top: 70px;right: 30px;}
+        .img4{left: 51px;top: 15px;}
+        .img5{left: 135px;top: 64px;}
+        .img6{top: 15px;right: 51px;}
+        .img7{left: 30px}
+        .img8{left: 100px;}
+        .img9{right: 100px;}
+        .img10{right: 30px}
+        .img11{left: 135px;top: 80px!important;}
+        .but{overflow: hidden;width: 320px;margin: 0 auto;padding-bottom: 40px;}
+        .a1{background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/gozw.png") no-repeat;float: left;width: 150px;height: 40px;display: block;background-size: 100%}
+        .a2{background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/gozj.png") no-repeat;float: right;width: 150px;height: 40px;display: block;background-size: 100%}
+        #login{width: 270px;height: 190px;background: url(//game.gtimg.cn/images/ffm/cp/a20180324ordm/login_bg.png) no-repeat center top;background-size: 100%;position: fixed;overflow: hidden;left: 50%;top: 50%;transform: translate(-50%,-50%);z-index: 9999;}
+        .login_btn{width:180px;margin: 70px auto 0;text-align: center;font-size: 0;}
+        .login_btn a{display: inline-block;width: 82px;height:82px;}
+        .login_btn .qq{background: url(//game.gtimg.cn/images/ffm/cp/a20180324ordm/qq.png) no-repeat center top;background-size: 100%;margin-right: 10px;}
+        .login_btn .wx{background: url(//game.gtimg.cn/images/ffm/cp/a20180324ordm/wx.png) no-repeat center top;background-size: 100%;}
+        #login .close_btn{position: absolute;width:50px;height:30px;background: url(//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/pop_close.png) no-repeat center top;background-size: 100%;right: -1px;top: -1px;}
+        .dr{position: absolute;top: 63px;right: 8px;color: #f5c417;font-weight: 600;}
+        .dr a{color:#EFA311;}
+        #system{width: 286px;background: url(//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/system.png) no-repeat center top;background-size: 100%;position: fixed;left: 50%;top: 50%;transform: translate(-50%,-50%);z-index: 9999;padding-top: 20px;padding-bottom: 50px}
+        #system .qqlogindr{padding: .68rem .1rem .4rem .2rem;}
+        #system .area_li{font-size: 16px;margin-top: 33px;text-align: center;color: #fff;}
+        button, input, select, textarea{outline: none;font: 12px/1.5 Tahoma,Helvetica,simsun,sans-serif;color: #666;word-wrap: break-word;word-break: break-all;}
+        #system .ljyy{display: block;width: 150px;height: 33px;background: url(//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/ljyy.png) no-repeat center top;background-size: 100%;margin:15px auto 15px;text-indent: -9999px;}
+        #system .area_yqm, #system .area_sj, #system .area_szm{margin: 5px 0;text-align: center;}
+        #system .sys_tit{margin-left: 5px;color: #ccc;font-size: 12px;font-weight: normal;}
+        #system .area_yqm input, #system .area_sj input, #system .area_szm input{width: 140px;height: 20px;border: 1px solid #0c2f31; background: url(//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/input-bg.png) no-repeat center;;padding-left: 10px;color: #EBEDEB;}
+        .area_sj{margin-top: 20px !important;}
+        .area_sj span{margin-left: 16px!important;}
+        #system .close_btn{width: 48.8px;height:50px;background: url(//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/pop_close.png) no-repeat center top;background-size: 100%;position: absolute;right: 0px;top: 0px;text-indent: -9999px;}
+        .cao{    width: 300px;
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+            margin: 10px auto 10px;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: bold;}
+        .cao i{color: #f9dd63; font-size: 22px}
+        #yycg {
+            width: 250px;
+            height: 120px;
+            background: url(//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/yy-success.png) no-repeat center top;
+            background-size: 100%;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            overflow: hidden;
+            z-index: 9999;
+        }#yycg .close_btn{
+             position: absolute;
+             width:46px;
+             height:30px;
+             background: url(//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/pop_close.png) no-repeat center top;
+             background-size: 100%;
+             right: 0;
+             top: -2px;
+             text-indent: -9999px;
+         }
+        #yyts .close_btn{
+            position: absolute;
+            width:46px;
+            height:30px;
+            background: url(//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/pop_close.png) no-repeat center top;
+            background-size: 100%;
+            right: 0px;
+            top: -2px;
+            text-indent: -9999px;
+        }
+        #yyts{
+            width: 250px;
+            height: 123px;
+            background:url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/zlcg.png")no-repeat center top;
+            background-size: 100%;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            overflow: hidden;
+            z-index: 9999;
+        }
+        .tsa1{
+            background: url("//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/but.png") no-repeat;     width: 110px;
+            height: 28px;
+            display: block;
+            background-size: 100%;
+            margin: 80px auto 0;
+        }
+        #afooter{
+            text-align: left;
+            color: #a5abac;
+            font-size: 12px;
+            padding: 15px;
+            background: #0d3737;
+        }
+        .emoji{height: 20px !important;}
+    </style>
+    <link href="//ossweb-img.qq.com/images/js/milo/biz/widget/emoji/emoji.css" rel="stylesheet">
+</head>
+<body>
+<!--头部-->
+<div class="topbar">
+    <h1 class="avatar"><a href="//ffm.qq.com/m/main.shtml" onclick="PTTSendClick('topbar','logo','logo标志')"><span>FIFA足球世界 首款实时PVP足球竞技手游</span></a></h1>
+    <div class="intro"><h2>FIFA足球世界</h2><p>首款实时PVP足球竞技手游</p></div>
+    <a href="//ffm.qq.com/m" class="btn-book" onclick="PTTSendClick('topbar','book','预约')">立即预约</a>
+</div>
+<!--头部-->
+<div class="wrapper">
+    <div class="modules">
+        <div class="dr" id="unlogin"><a href="javascript:" id="">【登录】</a></div>
+        <div class="dr" id="logined" style="display:none;">hi，<span id='userinfo'></span><a id="ptLogoutBtn" href="javascript:;">【注销】</a></div>
+        <!--登录弹窗-->
+        <div class="dialog" id="login" style="display: none">
+            <div class="login_btn">
+                <a href="javascript:;" id="" class="qq" style="cursor: pointer;"></a>
+                <a href="javascript:;" id="" class="wx"></a>
+            </div>
+            <a href="javascript:;" class="close_btn" title="关闭"></a>
+        </div>
+        <!--登录弹窗-->
+        <!--立即预约弹窗-->
+        <div class="dialog" id="system" style="display: none">
+            <div class="qqlogindr" id="qq">
+                <div class="area_li">
+                    <input type="radio" name="system" value="1">Android
+                    <input type="radio" name="system" value="2">IOS
+                </div>
+                <a class="ljyy" href="javascript:isloginn(2)">立即预约</a>
+                <div class="area_sj">
+                    <span class="sys_tit">手机号码 ：</span><input type="text" placeholder="选填">
+                </div>
+
+                <div class="area_yqm">
+                    <span class="sys_tit">好友邀请码 ：</span><input type="text" placeholder="选填">
+                </div>
+
+            </div>
+            <a href="javascript:;" class="close_btn" title="关闭按钮">X</a>
+        </div>
+        <!--立即预约弹窗-->
+        <!--预约成功弹窗-->
+        <div class="dialog" id="yycg" style="display: none ">
+            <a href="javascript:;" class="close_btn" title="关闭按钮">X</a>
+        </div>
+        <!--预约成功弹窗-->
+        <!--助力成功弹窗-->
+        <div class="dialog" id="yyts" style="display: none">
+            <a href="//ffm.qq.com/cp/a20180412zqzrm/index.html" class="tsa1"></a>
+            <a href="javascript:;" class="close_btn" title="关闭按钮">X</a>
+        </div>
+        <!--助力成功弹窗-->
+        <div class="mod1 clearfix">
+            <h1 class="hide">FIFA足球世界好友分享</h1>
+            <img class="slog" src="//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/slogan.png">
+            <!--分享者id-->
+            <div class="laiz">
+              <i>来自</i><span>-</span><i>的阵容分享</i>
+            </div>
+            <!--分享者id-->
+            <!--分享者阵容-->
+            <div class="n_bg">
+                <div class="img_top">
+                    <img class="img1" src="//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/diled.png">
+                    <img class="img2" src="//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/diled.png">
+                    <img class="img3" src="//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/diled.png">
+                </div>
+                <div class="img_cen">
+                    <img class="img4" src="//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/diled.png">
+                    <img class="img5" src="//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/diled.png">
+                    <img class="img6" src="//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/diled.png">
+                </div>
+                <div class="img_bot">
+                    <img class="img7" src="//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/diled.png">
+                    <img class="img8" src="//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/diled.png">
+                    <img class="img9" src="//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/diled.png">
+                    <img class="img10" src="//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/diled.png">
+                    <img class="img11" src="//game.gtimg.cn/images/ffm/cp/a20180412zqzrm/diled.png">
+                </div>
+            </div>
+            <!--分享者阵容-->
+        </div>
+        <div class="cao">已有<i>0</i>人为TA助威</div>
+        <div class="but"><a class="a1" href="javascript:isloginn(1);"></a><a class="a2" href="//ffm.qq.com/cp/a20180412zqzrm/index.html"></a>  </div>
+        <div class="bottom-show"><img src="" alt=""></div>
+    </div>
+</div>
+<script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+<script type="text/javascript" src="//ossweb-img.qq.com/images/js/mobile_bundle/util/zepto.js"></script>
+<script type="text/javascript" src="//ossweb-img.qq.com/images/js/loadjs.js"></script>
+<script type="text/javascript" src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+<script type="text/javascript" src="//ffm.qq.com/cp/a20180412zqzrm/login_fx.js"></script>
+<script type="text/javascript" src="//ffm.qq.com/cp/a20180412zqzrm/index_fx.js"></script>
+<script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+<script>
+    TGMobileShare({
+        shareTitle:'FIFA足球世界地表最强阵容正在集结，就差你了！', //不设置或设置为空时，页面有title，则调取title
+        shareDesc:'竞猜最强阵容，百名球星任你选，更有手机豪礼等你领！', //不设置或设置为空时，页面有Description，则调取Description
+        shareImgUrl:'//game.gtimg.cn/images/ffm/m/m201712/avatar.png', //分享图片尺寸200*200，且填写绝对路径
+        shareLink:'//ffm.qq.com/cp/a20180412zqzrm/index.html', //分享链接要跟当前页面同域名(手Q分享有这个要求) ,不设置或设置为空时，默认调取当前URL
+        actName:'a20180412zqzrm' //点击流命名，用于统计分享量，专题一般采用目录名称如a20151029demo
+    });
+</script>
+<script>
+    $(function(){
+        $('.close_btn').on('click',function(){
+            $('.dialog').hide();
+        });
+    })
+</script>
+<script>
+
+</script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+    //此段代码不能放到外链JS中，
+    var setSite={ //设置网站属性
+        siteType:"os"||"a20180412zqzrm", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+        pageType:"index_fx", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+        pageName:"分享", //必填项:页面中文名
+        osact:0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+        ingame:0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+        stayTime:0 //选填项:是否需要统计停留时长boolean；默认是0
+    }
+    if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+</script>
+<script>
+    var code = milo.request('code');
+    var state = milo.request('state');
+    var adtag = milo.request('ADTAG');
+    var tmpFrom = milo.request('from');
+    var tmpSpecialCode = milo.request('specialCode');
+    if( code!='' && state!='' && adtag!='' && tmpFrom!='' ){
+        window.location.href="//ffm.qq.com/cp/a20180412zqzrm/index_fx.htm?specialCode="+tmpSpecialCode;
+    }
+</script>
+</body>
+</html>
